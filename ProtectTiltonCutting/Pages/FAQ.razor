@@ -1,0 +1,54 @@
+﻿@page "/faq"
+
+<PageTitle>FAQ</PageTitle>
+
+<h1>FAQ</h1>
+@foreach (var faq in FAQs)
+{
+    <div @key="faq" class="faq-item">
+        <button class="faq-question" @onclick="() => ToggleFAQ(faq)">
+            @faq.Question
+        </button>
+        <div class="faq-answer" style="display:@(faq.IsOpen ? "block" : "none")">
+            @faq.Answer
+        </div>
+    </div>
+}
+<i>coming soon...</i>
+
+<style>
+    .faq-question {
+        background-color: #f7f7f7;
+        border: none;
+        outline: none;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .faq-answer {
+        padding: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .faq-item {
+        margin-bottom: 5px;
+    }
+</style>
+
+@code {
+    List<FAQItem> FAQs = new List<FAQItem>
+    {
+        // new FAQItem { Question = "What is Blazor?", Answer = "Blazor is a framework for building interactive client-side web UI with .NET."},
+        // new FAQItem { Question = "How does Blazor differ from other JavaScript frameworks?", Answer = "Blazor enables developers to write UI components using C# and HTML instead of JavaScript."},
+        // new FAQItem { Question = "Can I use Blazor for mobile development?", Answer = "Yes, Blazor can be used to develop mobile applications using the Mobile Blazor Bindings project."}
+    };
+
+    void ToggleFAQ(FAQItem faq)
+    {
+        faq.IsOpen = !faq.IsOpen; // Toggle the IsOpen property to show or hide the answer
+    }
+}

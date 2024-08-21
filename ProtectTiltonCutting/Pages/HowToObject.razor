@@ -1,0 +1,131 @@
+﻿@page "/howtoobject"
+
+@* <img src="images/howtoobject.jpg" />
+
+
+<style>
+    body {
+        text-align: center; /* Centers the content of the page */
+        /* margin-top: 10px; */ /* Adds some space at the top of the page */
+    }
+
+    img {
+        width: 70%; /* Adjusts the width of the image */
+        height: auto; /* Keeps the aspect ratio of the image */
+        margin-top: 20px; /* Adds some space above the image */
+    }
+</style>
+ *@
+
+<div class="container">
+    <h1>STOP TILTON HOLIDAY PARK</h1>
+    <h2>HOW TO OBJECT:</h2>
+    <ol>
+        <li><b>Read the application (it includes inaccuracies):</b> <a href="https://pa2.harborough.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SB0KK8HWIIK00">https://pa2.harborough.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SB0KK8HWIIK00</a></li>
+        <li>Write that you <b>"OBJECT to application 24/00396/OUT and agree with the submitted letter from Mr Charles of Aardvark Planning Law."</b> Add planning relevant points about how the application impacts you (see * below).</li>
+        <li>Submit <u>online</u> via the website above or <u>email</u> <a href="mailto:planning@harborough.gov.uk">planning@harborough.gov.uk</a>. <i>(make sure to include your full name and address)</i></li>
+        <li>
+            <b> Post INDIVIDUAL HARD COPY Letters of Objection to: <i>(make sure to include your full name and address)</i></b>
+            <address>
+                Nicola Parry,<br>
+                Harborough District Council<br>
+                The Symington Building,<br>
+                Adam and Eve Street,<br>
+                Market Harborough, Leicestershire, LE16 7AG
+            </address>
+        </li>
+        <li>
+            Send a <b>Copy</b> of your objection <b>with your name and address to: </b>
+            <ul>
+                <li>Alicia Kearns MP, House of Commons, London SW1A 0AA <a href="mailto:alicia.kearns.mp@parliament.uk">alicia.kearns.mp@parliament.uk</a></li>
+                <li>Councillor Sindy Modha, Harborough District Council (address above) <a href="mailto:s.modha@harborough.gov.uk">s.modha@harborough.gov.uk</a></li>
+            </ul>
+        </li>
+    </ol>
+    <div class="submission">
+        <strong>SUBMISSION DEADLINE: 13 MAY 2024.</strong>
+    </div>
+    <div class="note">
+        * Points that planning will consider are: overbearing impact from development, traffic/parking problems, noise and disturbance, and building in the Open Countryside.
+        <br>Please add details if you can see the site from your home, a local road or footpath.
+    </div>
+    <div class="thanks">Thank you!</div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        /* margin: 20px; */
+        background-color: #fff;
+        color: #333;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+
+    h1 {
+        color: red;
+        text-align: center;
+    }
+
+    h2 {
+        color: #555;
+    }
+
+    ol {
+        counter-reset: item;
+        padding-left: 0;
+    }
+
+        ol > li {
+            margin: 10px 0;
+            counter-increment: item;
+            list-style-type: none;
+        }
+
+            ol > li::before {
+                content: counter(item) ". ";
+                font-weight: bold;
+                color: black;
+            }
+
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    .address {
+        background-color: #e7e7e7;
+        padding: 10px;
+        font-style: italic;
+    }
+
+    .submission {
+        font-size: 1.1em;
+        color: red;
+        padding-top: 20px;
+    }
+
+    .note {
+        background-color: #e0e0e0;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 0.9em;
+    }
+
+    .thanks {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.2em;
+        color: green;
+    }
+</style>
